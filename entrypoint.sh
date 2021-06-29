@@ -8,6 +8,7 @@ if [ "$1" == "get" ] && [ "$branchName" ]; then
   echo "branch test: $branchName"
   branch=$(echo $branchName | sed 's/\//-/g')
   echo "new branch: $branch"
+  echo "output: $output"
   themeId=$($output | grep "\[$branch\]" | xargs | grep -Eo "\[(\d+?)]" | cut -d "[" -f 2 | cut -d "]" -f -1)
   echo "themeId: $themeId"
   echo "::set-output name=themeId::$themeId"
