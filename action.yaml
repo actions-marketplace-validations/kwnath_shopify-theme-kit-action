@@ -9,6 +9,7 @@ inputs:
     default: ""
   get-theme-id-by-name:
     description: Theme
+    default: ""
 outputs:
   result: # id of output
     description: 'The result of the command ran'
