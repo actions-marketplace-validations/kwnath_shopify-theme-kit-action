@@ -21,6 +21,7 @@ runs:
   args:
     - ${{ inputs.shopify-command }}
     - ${{ inputs.shopify-flags }}
+    - ${{ inputs.get-theme-id-by-name }}
 branding:
   icon: 'shopping-bag'  
   color: 'green'
