@@ -10,6 +10,8 @@ inputs:
 outputs:
   result: # id of output
     description: 'The result of the command ran'
+  themeId:
+    description: 'Theme id'
 runs:
   using: docker
   image: Dockerfile
