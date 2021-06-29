@@ -7,6 +7,9 @@ inputs:
   shopify-flags:
     description: Flags
     default: ""
+outputs:
+  result: # id of output
+    description: 'The result of the command ran'
 runs:
   using: docker
   image: Dockerfile
