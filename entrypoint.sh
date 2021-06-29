@@ -1,3 +1,5 @@
 #!/bin/sh
 
-theme $1 $2
+output=$(theme $1 $2)
+
+echo "::set-output name=result::$output"
