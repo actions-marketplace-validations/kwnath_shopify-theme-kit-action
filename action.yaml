@@ -16,3 +16,6 @@ runs:
   args:
     - ${{ inputs.shopify-command }}
     - ${{ inputs.shopify-flags }}
+branding:
+  icon: 'shopping-bag'  
+  color: 'green'
