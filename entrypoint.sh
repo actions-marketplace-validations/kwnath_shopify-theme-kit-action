@@ -2,7 +2,7 @@
 
 output=$(theme $1 $2)
 
-if [$3] && [$1 == "get"]; then
+if [$1 == "get"]; then
   echo "branch test: $3"
   branch=$($3 | sed 's/\//-/g')
   echo "branch: $branch"
