@@ -2,7 +2,7 @@
 
 output=$(theme $1 $2)
 
-if $3; then
+if [ $3 ] && [ $1 == "get" ]; then
     branch=$($3 | sed 's/\//-/g')
     themeId=$(theme get --list | grep "\[$branch\]" | xargs | grep -Eo "\[(\d+?)]" | cut -d "[" -f 2 | cut -d "]" -f -1)
 fi
