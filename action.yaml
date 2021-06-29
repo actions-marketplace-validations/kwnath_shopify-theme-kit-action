@@ -1,4 +1,4 @@
-name: Shopify Theme Kit
+name: Shopify Themekit
 description: Plain binary of Shopify Theme Kit for Github Actions
 inputs:
   shopify-command:
